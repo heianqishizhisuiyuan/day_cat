@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+
+	<head >
+		<meta charset="utf-8" />
+		<title>天猫tmall.com--上天猫,就够了</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+	</head>
+
+	<body>
+		<nav class="top-nav" style=" display:none;height: 50px;background: #DD2727 ;width: 100%;z-index: 1000;color: #fff ;position: fixed;">
+			<div class="col-xs-offset-2 col-xs-2  logo ">
+				<span style="line-height: 50px;font-size: 25px"> 天猫 TMALL.COM</span>
+			</div>
+			<div class="col-xs-8">
+				<form class="form-inline top-form" style="line-height: 50px; width:100%;">
+					<div class="form-group">
+						<input type="text" style="width: 600px" class="form-control top-search">
+					</div>
+					<div class="form-group" style="margin-left: -5px; ">
+						<button class="btn btn-danger" style="width: 100px ;height: 36px;background:#b90500"> 搜索</button>
+					</div>
+				</form>
+			</div>
+		</nav>
+		<div class="bar-aside">
+			<ul class="list-unstyled">
+				<li style="background: rgb(221, 39, 39)"><a href="javascript:void(0)">导航</a></li><li><a href="#cool_play">潮店酷玩</a></li><li><a href="">打造爱巢</a></li><li><a href="">亲子时光</a></li><li><a href="">户外出行</a></li><li><a href="">居家生活</a></li><li><a href="">美丽人生</a></li>
+				<li><a href="">品牌旗舰</a></li><li style="background: rgb(221, 39, 39)"><a href="#guess_like">猜你喜欢</a></li><li><a href="#header">回到顶部</a></li>
+			</ul>
+		</div>
+		<header id="header">
+			<ul class="header-user">
+				<li id="index_login"><span class="login status-hover">登录 </span><span class="regist status-hover"> &nbsp; &nbsp;注册</span></li>
+				<li id="index_regist"><span class="username"></span> <span class="logout status-hover"> &nbsp; &nbsp;登出</span></li>
+			</ul>
+			<ul class="header-nav">
+				<li class="header-nav-1 header-score">
+					<span id="my-taobao_">我的淘宝</span><i class="fa fa-angle-down fa-lg icon-down"></i>
+					<ul class="my-taobao">
+						<li>
+							<a href="">已买到的东西</a>
+						</li>
+						<li>
+							<a href="">已卖出的东西</a>
+						</li>
+					</ul>
+				</li>
+				<li>我关注的品牌</li>
+				<li class="header-nav-3">购物车</li>
+				<li class="header-nav-3">收藏夹</li>
+				<li>手机版</li>
+				<li>淘宝网</li>
+				<li>企业购</li>
+				<li class="header-nav-8">商家支持
+					<div class="">
+						<ul>
+							<h5>商家</h5>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<hr />
+						</ul>
+					</div>
+				</li>
+				<li>网站导航</li>
+			</ul>
+		</header>
+		<div class="search-wrap">
+			<input id="search-content" type="" name="" id="" value="" placeholder="请输入搜索内容" />
+			<div id="search">
+				搜索
+			</div>
+		</div>
+		<ul class="hot-search ui-list">
+			<li>大闸蟹</li>
+			<li>床垫</li>
+			<li>针织衫</li>
+			<li>电动牙刷</li>
+			<li>睡衣</li>
+			<li>大闸蟹</li>
+			<li>床垫</li>
+			<li>针织衫</li>
+			<li>电动牙刷</li>
+			<li>睡衣</li>
+		</ul>
+		<div class="container-fluid wrapper">
+			<div class="container-wrapper-w">
+				<div class="container-wrapper">
+					<ul class="ui-list nav-list">
+						<li class="nav-vertical"> <i class="glyphicon glyphicon-list"> </i> 商品分类</li>
+						<li> <i class="glyphicon glyphicon-home"></i> 天猫超市
+							<div class="li-header"></div>
+						</li>
+						<li> <i class="glyphicon glyphicon-plane"></i> 天猫国际
+							<div class="li-header"></div>
+						</li>
+						<li class="active"> 天猫会员
+							<div class="li-header"></div>
+						</li>
+						<li>品牌街
+							<div class="li-header"></div>
+						</li>
+						<li>电器城
+							<div class="li-header"></div>
+						</li>
+						<li>喵鲜生
+							<div class="li-header"></div>
+						</li>
+						<li>医药馆
+							<div class="li-header"></div>
+						</li>
+						<li>营业厅
+							<div class="li-header"></div>
+						</li>
+						<li>魅力惠
+							<div class="li-header"></div>
+						</li>
+						<li>阿里旅游
+							<div class="li-header"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="slide-wrap">
+				<ul class="slide-wrap-ul">
+					<% carousel.forEach(function(key,val){%>
+						<li><img src="<%=key.imgUrl.replace(/public/,' ') %>" class="img-responsive" alt="<%=key.title%>"></li>
+					<%})%>
+				</ul>
+			</div>
+			<div class="container-wrapper clearfix">
+				<ul class="ul-vertiacle">
+					<li class="ul-vertiacle-1"><i class="icon-bold"></i> 女装/内衣
+						<div class="slide-menu slide-menu1">
+							<div>
+								<div class="col-sm-2">
+									<label>1当季流行 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>精选上衣 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>特色女装 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>文胸塑身 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>家居服 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>内裤背心 </label>
+								</div>
+
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>袜类 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><i class="icon-bold"></i> 男装/运动户外
+						<div class="slide-menu slide-menu2">
+							<div>
+								<div class="col-sm-2">
+									<label>当季流行 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+									<hr class="dashed">
+								</div>
+							</div>
+
+							<div>
+								<div class="col-sm-2">
+									<label>精选上衣 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>特色女装 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>文胸塑身 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>家居服 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>内裤背心 </label>
+								</div>
+
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+									<p>气质套装 内衣新品 内衣商场同款 聚拢文胸 睡衣套装 情侣家居服</p>
+								</div>
+							</div>
+							<div>
+								<div class="col-sm-2">
+									<label>袜类 </label>
+								</div>
+								<div class="col-sm-10">
+									<p>秋季新品 金秋连衣裙 女装商场 同款印花衬衫 风衣 早秋休闲裤 </p>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li><i class="icon-bold"></i> 女鞋/男鞋/箱包</li>
+					<li><i class="icon-bold"></i> 化妆品/个人护理</li>
+					<li><i class="icon-bold"></i> 腕表/珠宝饰品/眼镜</li>
+					<li><i class="icon-bold"></i> 手机/数码/电脑办公</li>
+					<li><i class="icon-bold"></i> 女装/内衣</li>
+					<li><i class="icon-bold"></i> 男装/运动户外</li>
+					<li><i class="icon-bold"></i> 女鞋/男鞋/箱包</li>
+					<li><i class="icon-bold"></i> 化妆品/个人护理</li>
+					<li><i class="icon-bold"></i> 腕表/珠宝饰品/眼镜</li>
+					<li><i class="icon-bold"></i> 手机/数码/电脑办公</li>
+					<li><i class="icon-bold"></i> 女装/内衣</li>
+					<li><i class="icon-bold"></i> 男装/运动户外</li>
+					<li><i class="icon-bold"></i> 女鞋/男鞋/箱包</li>
+					<li><i class="icon-bold"></i> 化妆品/个人护理</li>
+					<li><i class="icon-bold"></i> 腕表/珠宝饰品/眼镜</li>
+					<li><i class="icon-bold"></i> 手机/数码/电脑办公</li>
+				</ul>
+				<ul class="ul-vertiacle-right">
+					<li class="ul-vertiacle-right-1"><i class=" icon-github-alt"></i></li>
+					<li>Hi~你好！</li>
+					<li><button class=" btn btn-danger">免费注册</button></li> <br>
+					<hr class="dashed" />
+					<li>退货保障</li>
+					<li>花呗分期</li>
+					<li>极速退款</li>
+					<li>更多特权</li>
+					<li>推荐活动 ></li>
+					<li class="ul-vertiacle-right-9"><img src="img/football.jpg" alt=""></li>
+					<li style="padding-bottom:40px ">3500积分</li>
+				</ul>
+				<div style="height: 542px"></div>
+				<div class="banner1">
+					<img src="img/ad.png" alt="">
+				</div>
+
+				<div class="product-list1 clearfix">
+					<div class="col-xs-2">
+						<img src="img/product1 (1).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product1 (2).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product1 (3).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product1 (4).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product1 (5).jpg" class="img-responsive" alt="">
+					</div>
+				</div>
+				<div class="product-list2 clearfix">
+					<div class="split-line">
+						<span class="vline"></span>
+						<div class="your-active">
+							<i class="glyphicon glyphicon-map-marker"></i>你的专属活动
+						</div>
+						<span class="vline"></span>
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product2 (1).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product2 (2).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product2 (3).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product2 (4).jpg" class="img-responsive" alt="">
+					</div>
+					<div class="col-xs-2">
+						<img src="img/product2 (5).jpg" class="img-responsive" alt="">
+					</div>
+				</div>
+				<div class="product-list3">
+					<div class="clearfix">
+						<div class="fl">
+							<div class="label_"><div class="tag" id="cool_play"></div></div><h4 class="display-inblock">潮店酷玩</h4>
+						</div>
+						<div class="fr">
+							<ul class="list-inline text-right display-inblock grid-padding">
+								<li>手机</li>
+								<li>iPhone</li>
+								<li>相机</li>
+								<li>数码配件</li>
+								<li>影音电玩</li>
+								<li>生活电器</li>
+								<li>个人护理</li>
+								<li>电脑硬件</li>
+								<li>笔记本</li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="clearfix" style="width:1120px;">
+						<div class="fl" style="width: 250px;position: relative;">
+							<div class="img-bar-tip img-bar-tip1 text-center">
+									<div class="slide-item">游戏笔记本4499元起</div>
+									<div class="slide-item">超支拨款清单</div>
+									<div class="slide-item">轻薄二合一1099元起</div>
+							</div>
+							<img src="/img/product-list 3 (2).jpg" height="330" alt="" />
+							<div class="cool-botom-bar">
+								<h3 class="text-center">换新趁现在</h3>
+								<p class="text-center">英特尔芯感恩返场</p>
+							</div>
+						</div>
+						<div class="fl cool-product-list" style="width: 870px;">
+							<a href="javascript:void(0)" class="grid grid-one clearfix">
+								<div class="fl grid-padding">
+									<h3>天猫首发 魅蓝5</h3>
+									<h4>立刻抢购</h4>
+									<p class="product-list3-color">超窄边 指纹指纹 长续航</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (1).png" width="195" height="220" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two clearfix">
+								<div class="fl grid-padding">
+									<h4>创意●改变●生活</h4>
+									<p class="product-list3-color">爱家精选 洁净无限 </p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (3).jpg" width="154" height="154" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two clearfix">
+								<div class="fl grid-padding">
+									<h4>型男必备 &nbsp;&nbsp;&nbsp;&nbsp;</h4>
+									<p class="product-list3-color">品味优质生活 </p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (4).jpg" width="154" height="142" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-three clearfix">
+								<div class="fl grid-padding">
+									<h3>酷玩黑科技蓝牙</h3>
+									<p class="product-list3-color">真无线分离双耳蓝牙</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (5).jpg" width="154" height="125" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-three clearfix">
+								<div class="fl grid-padding">
+									<h4>小米盒子新品首发</h4>
+									<p class="product-list3-color">人工智能机顶盒</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (6).jpg" width="154" height="154" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two clearfix">
+								<div class="fl grid-padding">
+									<h4>景象森呼吸</h4>
+									<p class="product-list3-color">除霾 享健康空气 </p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (7).jpg" width="154" height="142" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two clearfix">
+								<div class="fl grid-padding">
+									<h4>换新趁现在</h4>
+									<p class="product-list3-color">英特尔芯感恩返场 </p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (1).jpg" width="154" height="142" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-list4">
+					<div class="clearfix">
+						<div class="fl">
+							<div class="label_" style="border: 2px solid #19C8A9;"></div><h4 class="display-inblock">户外出行<h5 class="display-inblock">&nbsp;&nbsp; OUTDOORS & AUTOMOTIVE</h5></h4>
+						</div>
+						<div class="fr">
+							<ul class="list-inline text-right display-inblock grid-padding">
+								<li>手机</li>
+								<li>iPhone</li>
+								<li>相机</li>
+								<li>数码配件</li>
+								<li>影音电玩</li>
+								<li>生活电器</li>
+								<li>个人护理</li>
+								<li>电脑硬件</li>
+								<li>笔记本</li>
+							</ul>
+						</div>
+						
+					</div>
+					<div class="clearfix" style="width:1120px;">
+						<div class="fl" style="width: 250px;position: relative;">
+							<div class="img-bar-tip img-bar-tip2 text-center">
+									<div class="slide-item">先领券后购物></div>
+									<div class="slide-item">抢免费滑雪门票></div>
+									<div class="slide-item">买滑雪服送手表></div>
+							</div>
+							<img src="/img/product-list4.png" height="330" alt="" />
+							<div class="cool-botom-bar"  style="background: #19C8A9;">
+								<h3 class="text-center">天猫滑雪节</h3>
+								<p class="text-center">雪季激情开启</p>
+							</div>
+						</div>
+						<div class="fl cool-product-list" style="width: 645px;">
+							<a href="javascript:void(0)" class="grid grid-three  clearfix">
+								<div class="fl grid-padding">
+									<h3>整车特卖啦</h3>
+									<p class="product-list4-color">买车就送油卡哟</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (4).jpg" width="154" height="154" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-three  clearfix">
+								<div class="fl grid-padding">
+									<h4>天猫第三届滑雪节</h4>
+									<p class="product-list4-color">抢免费滑雪门票</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (5).jpg" width="154" height="154" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two  clearfix">
+								<div class="fl grid-padding">
+									<h4>紫风铃四季垫</h4>
+									<p class="product-list4-color">全包围3d款坐垫</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (6).jpg" width="154" height="142" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-three clearfix">
+								<div class="fl grid-padding">
+									<h3>乔丹女鞋冬季跑鞋</h3>
+									<p class="product-list4-color">时尚百搭减震耐磨</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (8).jpg" width="154" height="125" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-three clearfix">
+								<div class="fl grid-padding">
+									<h4>李宁专业泳裤</h4>
+									<p class="product-list4-color">一切皆有可能</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (9).jpg" width="154" height="154" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-two  clearfix">
+								<div class="fl grid-padding">
+									<h4>Reactor</h4>
+									<p class="product-list4-color">无视温度动无限度</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list 3 (7).jpg" width="154" height="142" alt="" />
+								</div>
+							</a>
+						</div>
+						<div class="fl cool-product-list" style="width: 221px;">
+							<a href="javascript:void(0)" class="grid grid-four  clearfix">
+								<div class="fl grid-padding">
+									<h4>滑雪节</h4>
+									<p class="product-list4-color">满999减100</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (7).jpg" width="100" height="100" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-four   clearfix">
+								<div class="fl grid-padding">
+									<h4>香百年出风口香水</h4>
+									<p class="product-list4-color">绅士风度法国香料</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (3).jpg" width="100" height="100" alt="" />
+								</div>
+							</a>
+							<a href="javascript:void(0)" class="grid grid-four  clearfix" style="border-bottom: 0;">
+								<div class="fl grid-padding">
+									<h4>鸿星尔克新品上市</h4>
+									<p class="product-list4-color">运动让彼此更亲近</p>
+								</div>
+								<div class="fr">
+									<img src="/img/product-list4 (2).jpg" width="100" height="100" alt="" />
+								</div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="product-list5" >
+					<h3 class="text-center"><span class="line-wrap"> <div class="tag" id="guess_like"></div><i class="fa fa-heart" style="color: #dd2727;" aria-hidden="true"></i>猜你喜欢</span></h3>
+					<ul class="guess_like list-inline">
+						<li id="guess_product1">
+							<img src="/img/product-list5 (2).jpg" alt="" width="100%"/>
+							<p class="text-muted guess_product_info">冬季长裤男士休闲男裤修身青年商务直筒秋冬款加绒正装西裤子男装</p>
+							<span class="guess_like_price">￥119.9</span>
+
+						</li>
+						<li><img src="/img/product-list5 (1).jpg" alt="" width="100%"/>
+							<p class="text-muted guess_product_info">雅琼布艺沙发组合简约现代客厅沙发大户型可拆洗转角沙发A61</p>
+							<span class="guess_like_price">￥1899.9</span>
+						</li>
+						<li><img src="/img/product-list5 (3).jpg" alt="" width="100%"/>
+							<p class="text-muted guess_product_info">【华为官方】Huawei/华为 华为畅享5S 5.0英寸4G智能手机</p>
+							<span class="guess_like_price">￥1199.9</span>
+						</li>
+						<li><img src="/img/product-list5 (4).jpg" alt="" width="100%"/>
+							<p class="text-muted guess_product_info">聚林氏家具欧式别墅皮艺沙发小户型储物头层牛皮真皮沙发组合6302</p>
+							<span class="guess_like_price">￥1919.9</span>
+						</li>
+						<li><img src="/img/product-list5 (5).jpg" alt="" width="100%"/>
+							<p class="text-muted guess_product_info">聚林氏家具小户型沙发全拆洗布艺沙发客厅转角日式三人沙发1004</p>
+							<span class="guess_like_price">￥9119.9</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<footer style="width: 70%; margin:0 auto; ">
+				<div class="service">
+					<ul>
+						<li>
+							<span class="fa-stack fa-lg">
+						  <i class="fa fa-send-o fa-stack-1x"></i>
+						  <i class="fa fa-circle-o fa-stack-2x "></i>
+						</span><br> 品质保障 <br> <span>品质护航 购物无忧</span>
+						</li>
+						<li>
+							<span class="fa-stack fa-lg">
+						  <i class="fa fa-star fa-stack-1x"></i>
+						  <i class="fa fa-circle-o fa-stack-2x "></i>
+						</span><br>七天无理由退货<br> <span>为您6提供售后无忧保障</span>
+						</li>
+						<li>
+							<span class="fa-stack fa-lg">
+						  <i class="fa fa-tree fa-stack-1x"></i>
+						  <i class="fa fa-circle-o fa-stack-2x "></i>
+						</span><br>特色服务体验<br> <span>为您呈现不一样的服务</span>
+						</li>
+						<li style="border: none">
+							<span class="fa-stack fa-lg">
+							  <i class="fa fa-diamond fa-stack-1x"></i>
+							  <i class="fa fa-circle-o fa-stack-2x "></i>
+						</span><br>帮助中心<br> <span>您的购物指南</span>
+						</li>
+					</ul>
+				</div>
+				<hr style=" margin:50px 0 20px 0">
+				<div class="row footer-conter" style="margin-left: 25px;">
+					<div class="col-xs-2">
+						<ul class="list-unstyled">
+							<li>购物指南</li>
+							<li>免费注册</li>
+							<li>开通支付宝</li>
+							<li>支付宝充值</li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul class="list-unstyled">
+							<li>天猫保障</li>
+							<li>发票保障</li>
+							<li>售后规则</li>
+							<li>缺货赔付</li>
+
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul class="list-unstyled">
+							<li>支付方式</li>
+							<li>快捷支付</li>
+							<li>信用卡</li>
+							<li>余额宝</li>
+							<li>蚂蚁花呗</li>
+							<li>货到付款</li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul class="list-unstyled">
+							<li>商家服务</li>
+							<li>商家入驻</li>
+							<li>天猫智库</li>
+							<li>商家规则</li>
+							<li>物流服务</li>
+							<li>喵言庙宇</li>
+							<li>运营服务</li>
+						</ul>
+					</div>
+					<div class="col-xs-2">
+						<ul class="list-unstyled">
+							<li>手机天猫</li>
+							<li><img src="http://img.alicdn.com/tps/i1/TB14VZKHXXXXXcAXXXX64VRZFXX-105-105.png" alt=""></li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+			<div class="footer-info-wrap">
+				<div style="width: 70%; margin:0 auto;padding: 1px">
+					<ul class="list-inline " style="margin-top: 10px;">
+						<li>关于天猫 </li>
+						<li>帮助中心</li>
+						<li>规则意见征集</li>
+						<li>开放平台</li>
+						<li>诚聘英才</li>
+						<li>联系我们</li>
+						<li>网站合作</li>
+						<li>法律声明</li>
+						<li>知识产权</li>
+						<li>廉正举报</li>
+					</ul>
+					<ul class="list-inline partner">
+						<li>阿里巴巴集团</li>
+						<li> 淘宝网</li>
+						<li>天猫</li>
+						<li>聚划算</li>
+						<li>全球速卖通</li>
+						<li>阿里妈妈</li>
+						<li>阿里旅行·去啊</li>
+						<li>阿里云计算</li>
+						<li>YunOS</li>
+						<li style="border-right: none">阿里通信</li>
+					</ul>
+					<div>
+						<div class="promise">
+							<h1 class="text-center"> 您的需求就是我们的目标</h1>
+						</div>
+
+					</div>
+				</div>
+			</div>
+				<script src="javascripts/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+				<script type="text/javascript" charset="utf-8" src="bootstrap/js/bootstrap.min.js"></script>
+				<script src="javascripts/jquery.plugs.js" type="text/javascript" charset="utf-8"></script>
+				<script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

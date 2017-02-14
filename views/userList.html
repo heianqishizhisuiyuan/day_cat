@@ -1,0 +1,42 @@
+<style type="text/css">
+	.table>tbody>tr>td{
+		vertical-align: middle;
+	}
+</style>
+<div class="table-responsive">
+<table class="table table-hover table-bordered table-striped"  cellspacing="0" cellpadding="0">
+		<caption class="text-center"> 用户列表</caption>
+		<thead>
+			<tr>
+				<th>序号</th>
+				<th>手机</th>
+				<th>昵称</th>
+				<th>性别</th>
+				<th>真实姓名</th>
+				<th>出生日期</th>
+				<th>密码</th>
+				<th>注册时间</th>
+				<th>操作</th>
+			</tr>
+		</thead>
+		<tbody>
+			<%user.forEach(function(item,val){%>
+				<tr>
+					<td width="50px" class="text-center"><%=val+1%></td>
+					<td> <%=item.phone%> </td>
+					<td> <%=item.username%> </td>
+					<td> <%=item.sex%> </td>
+					<td> <%=item.truename%> </td>
+					<%if(item.birth_year){%>
+						<td> <%=item.birth_year%>年<%=item.birth_month%>月<%=item.birth_day%>日 </td>
+					<%}else{%>
+						<td></td>
+					<%}%>
+					<td> <%=item.password%> </td>
+					<td> <%=item.registTime%> </td>
+					<td user_id="<%=item._id%>"> <button class="btn btn-default user_delete"> 删除</button></td>
+				</tr>
+			<%})%>
+		</tbody>
+	</table>
+</div>

@@ -1,0 +1,114 @@
+<style type="text/css">
+	.business-form{
+		margin: 20px 30px;
+	}
+	.business-form input[type="text"]{
+		width: 100px;
+		display: inline-block;
+	}
+	.business-radio span{
+		margin-right: 20px;
+	}
+	
+	#business_address{
+		width: 300px;
+	}
+	#business_address+span{
+		margin-left: 30px;
+	}
+	.business-form select{
+		width: auto;
+		display: inline-block;
+	}
+</style>
+
+<h5 class="user_info-title">个人交易信息</h5>
+<form class="form-horizontal business-form" action="">
+	<div class="form-group">
+		<label for="" class="col-xs-2">真实姓名：</label>
+		<div class="col-xs-10">
+			<input type="text" class="form-control"  value="王超" readonly />
+			<span class="text-danger" >真实姓名不能修改。</span>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">登录邮箱地址：</label>
+		<div class="col-xs-10">
+			<input type="text"  class="form-control" value="1234" readonly />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">性别：</label>
+		<div class="col-xs-10 business-radio">
+			<span>
+				<input type="radio" value="man"  name="sex"/>男
+			</span>
+			<span>
+				<input type="radio" value="woman"  name="sex"/>女
+			</span>
+			<span>
+				<input type="radio" value=""  name="sex"/>保密
+			</span>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">生日：</label>
+		<div class="col-xs-10">
+			<input type="text" class="form-control" />年
+			<input type="text" class="form-control"  />月
+			<input type="text" class="form-control" />日
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">个人所在地：</label>
+		<div class="col-xs-10">
+			<select name="" id="business_province" class="form-control">
+			</select>省
+			<select name="" id="business_city"  class="form-control">
+				
+			</select>市
+			<select name="" id="business_area"  class="form-control">
+				
+			</select>区
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">详细地址：</label>
+		<div class="col-xs-10">
+			<input type="text"class="form-control" id="business_address"  /><span class="text-muted">填写真实有效的信息</span>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">邮政编码：</label>
+		<div class="col-xs-10">
+			<input type="text" class="form-control"/>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">固定电话：</label>
+		<div class="col-xs-10">
+			<input type="text" class="form-control" />-
+			<input type="text" class="form-control"  />-
+			<input type="text" class="form-control" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">将固定电话：</label>
+		<div class="col-xs-10 business-radio">
+			<span><input type="radio" name="business_type" />作为交易联系方式</span>
+			<span><input type="radio" name="business_type"  />不作为交易联系方式</span>		
+			
+		</div>
+	</div>
+	<button  type="button" class="btn btn-danger col-xs-offset-2">确定</button> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; <button type="button" class="btn btn-danger">取消</button>
+</form>
+<script type="text/javascript">
+	province("business_province");
+	
+	$("#business_province").change(function(){
+		cityyi("business_province","business_city");
+	})
+	$("#business_city,#business_province").change(function(){
+		areaa("business_city","business_area");
+	})
+</script>

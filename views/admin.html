@@ -1,0 +1,57 @@
+ <!DOCTYPE html>
+<html  manifest="manifest.appcache">
+<head>
+	<meta charset="utf-8" />
+	<title>管理系统</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/easyui/themes/bootstrap/easyui.css"/>
+	<link rel="stylesheet" type="text/css" href="/easyui/themes/icon.css"/>
+	<link rel="stylesheet" href="/stylesheets/dropzone.css" />
+	<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/admin.css" />
+</head>
+<body class="easyui-layout">
+	<div data-options="region:'north',title:'管理系统' ,split:'true'" style="height: 100px">
+		<h3>管理系统</h3>
+	</div>
+	<!--<div data-options="region:'south',title:'south', split:'true'" style="height: 100px"></div>-->
+	<div data-options="region:'east',iconCls:'icon-reload',title:'East',split:true" style="width:100px;"></div>
+    <div data-options="region:'west',title:'West',split:true" style="width:200px;">
+    	<div id="aside_west"  style="width:99%;height:99%;">   
+		    <div title="用户管理" data-options="iconCls:'icon-man'" style="overflow:auto;padding:0px;">   
+		        <ul class="list-unstyled user_list west_ul">
+		        	<li id="userList">用户列表</li>
+		        	<li>用户列表</li>
+		        	<li>用户列表</li>
+		        </ul>   
+		    </div>   
+		    <div title="首页管理" data-options="iconCls:'icon-ok'">   
+		        <ul class="list-unstyled user_list west_ul">
+		        	<li id="carousel">轮播器管理</li>
+		        	<li>产品管理</li>
+		        	<li>用户列表</li>
+		        </ul>   
+		    </div>   
+		    <div title="Title3">   
+		        <ul class="list-unstyled user_list west_ul">
+		        	<li>用户列表</li>
+		        	<li>用户列表</li>
+		        	<li>用户列表</li>
+		        </ul>   
+		    </div>   
+		</div>  
+    </div>
+    <div data-options="region:'center',title:'center title'" style="padding:5px;">
+    	<div id="main">
+    		
+    	</div>
+    </div> 
+
+<script src="/javascripts/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/dropzone.js" type="text/javascript" charset="utf-8"></script>
+<script src="javascripts/jquery.plugs.js" type="text/javascript" charset="utf-8"></script>
+<script src="/easyui/jquery.easyui.min.js" type="text/javascript" charset="utf-8"></script>
+<script src="/easyui/locale/easyui-lang-zh_CN.js" type="text/javascript" charset="utf-8"></script>
+<script src="/javascripts/admin.js"  type="text/javascript" ></script>
+</body>
+</html>

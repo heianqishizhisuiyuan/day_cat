@@ -1,0 +1,94 @@
+<style type="text/css">
+	.form_carousel{
+		width:500px ;
+		margin: 0 auto;
+	}
+	#myDropzone{
+		width: 450px;
+		height: 200px;
+		border: 1px dashed #0000FF;
+		text-align: center;
+	}
+	#carousel_load{
+		display: none;
+	}
+	#myDropzone button[type=button]{
+		margin-top: 90px;
+	}
+</style>
+<form class="form-horizontal form_carousel">
+	<div class="form-group">
+		<label for=""class="control-label col-xs-2">照片次序：</label>
+		<div class="col-xs-4">
+			<select name="" class="form-control carousul_num">
+				<option value="1">第一张</option>
+				<option value="2">第二张</option>
+				<option value="3">第三张</option>
+			</select>
+		</div>
+		
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2 control-label">Title:</label>
+		<div class="col-xs-10">
+			<input type="text" id="carousel_title_" class="form-control" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2 control-label">Url:</label>
+		<div class="col-xs-10">
+			<input type="text" class="form-control" id="carousel_url_"  />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2 control-label">上传：</label>
+		<div class="col-xs-offset-2" id="myDropzone" style="height: 200px;width: 450px;">
+			<button type="button" class="btn btn-default">上传图片</button>
+			<input type="file" id="carousel_load"/>
+			<img src="" alt="" id="display_carouse" />
+		</div>
+	
+		
+	</div>
+	<div class=" col-xs-offset-2">
+		<button id="submit-all"type="button" class="btn btn-default">上传</button>
+		<button id="clear-dropzone" class="btn btn-default">取消</button>
+	</div>
+</form>
+
+<script type="text/javascript">
+	$("#myDropzone button[type=button]").click(function(){
+		$("#carousel_load").click()
+	})
+	$("#carousel_load").change(function(){
+		$("#myDropzone button[type=button]").css("display","none");
+		document.getElementById("display_carouse").src= window.URL.createObjectURL(document.getElementById("carousel_load").files.item(0));
+		$("#display_carouse").css({
+			height:"100%",
+			width:"100%"
+		})
+	})
+	
+	$("#submit-all").click(function(){
+		
+		var xhr= new XMLHttpRequest();
+		var uri="/admin/upload";
+		var fd=new FormData();
+		xhr.open("POST",uri,true);
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				
+				$.tip("图片上传成功成功")
+				
+				
+				
+			}
+		};
+		fd.append("uploadType","adminCarousel");
+		fd.append('file',document.getElementById("carousel_load").files.item(0));
+		fd.append("carousel_title",$("#carousel_title_").val());
+		fd.append("carousul_num",$(".carousul_num option:checked").val());
+		fd.append("carousel_url",$("#carousel_url_").val());
+		xhr.send(fd);
+	})
+</script>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>23</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    
+  </head>
+  <style type="text/css">
+  	html{
+	min-height: 100%;
+	min-width: 100%;
+	}
+	body{
+		margin: 0;
+		padding: 0;
+		background: url("../img/bg.jpg") no-repeat ;
+		background-size: 100% 100%;
+		height: 100%;
+		width: 100%;
+	}
+	.img-wrap{
+	min-width: 800px;
+	height: 350px;
+	
+}
+.img-wrap img{
+	height: 350px;
+	width: 100%;
+	-webkit-clip-path: url(#textPath);
+}
+.form-wrap{
+	min-width: 800px;
+	text-align: center;
+}
+.form-wrap input{
+	color: #fff;
+	width: 250px;
+	height: 35px;
+	background: linear-gradient(#393939, #292929);
+	outline: none;
+	text-indent: 5px;
+	border: 1px solid #444;
+	border-radius: 2px;
+	margin-top: 10px;
+	border:1px solid #080505 ;
+	text-shadow: 0 -1px 0 #000;
+	padding: 0 10px;
+}
+.form-wrap input:focus{
+	box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 15px rgba(0,255,0,.1), 0 2px 0 #000;
+	animation: glow 800ms ease-out infinite alternate;
+}
+.form-wrap  button{
+	color: #c3bebe;
+	margin-left: -2px;
+	height: 35px;
+	width: 70px;
+	background: linear-gradient(#393939, #292929);
+	outline: none;
+	border: 1px solid #444;
+	padding: 2px;
+  border-radius: 6px;
+	position: relative;
+}
+.form-wrap  button:hover{
+	background: #292929;
+	color:#fff !important;
+}
+.form-wrap  button:active{
+	box-shadow: 0 1px 0 #000, inset 1px 0 1px #222;
+	top: 1px;
+}
+@-webkit-keyframes glow {
+    0% {
+		border-color: #393;
+		box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 2px 0 #000;
+    }	
+    100% {
+		border-color: #6f6;
+		box-shadow: 0 0 30px rgba(0,255,0,.8), inset 0 0 0px rgba(0,255,0,.4), 0 2px 0 #000;
+    }
+}
+  </style>
+  <body>
+		<div class="img-wrap">
+			<img src="/img/img.jpg" alt="" />
+		</div>
+		<div class="form-wrap">
+			<p><input type="text" id="phone" placeholder="手机号" /></p>
+			<p><input type="password" id="password" placeholder="密码" required="" /></p>	
+			<p><button id="btn_login">登录</button></p>	
+		</div>
+		<svg height="0" width="0">
+			<defs>
+				<clippath id="textPath">
+					<text x="100" y="300" textLength="700px" lengthAdjust="spacing" font-family="Vollkorn" font-size="230px" font-weight="700" font-style="italic">Centro</text>
+        </clipPath>
+   		</defs>
+		</svg>
+    <script src="/javascripts/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+   	<script src="/javascripts/jquery.plugs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+  <script type="text/javascript">
+
+  </script>
+</html>

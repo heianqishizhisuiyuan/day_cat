@@ -1,0 +1,15 @@
+CACHE MANIFEST
+#VERSION 1.3
+CACHE:
+	carouselUploads/file-1482485753212.jpg
+	 \carouselUploads\file-1482722294349.jpg
+	bootstrap/css/bootstrap.min.css
+	stylesheets/font-awesome.min.css
+	img/favicon.ico
+	stylesheets/style.css
+	javascripts/jquery-2.1.1.min.js
+	bootstrap/js/bootstrap.min.js
+	javascripts/jquery.plugs.js
+	javascripts/main.js
+	NETWORK:
+    *

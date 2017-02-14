@@ -1,0 +1,79 @@
+<style type="text/css">
+	.adress-tip{
+		margin: 20px 30px;
+	}
+	.address-form{
+		margin: 20px 50px;
+	}
+	.address-form select{
+		width: auto;
+		display: inline-block;
+	}
+	.address-form input{
+		width: auto;
+		display: inline-block;
+	}
+	.address-telephone input{
+		width: 130px;
+	}
+</style>
+<h5 class="user_info-title">收货地址</h5>
+<p class="adress-tip"><span class="text-danger">新增收货地址</span> 电话号码、手机号选填一项, 其余均为必填项</p>
+<form class="form-horizontal address-form" action="">
+	<div class="form-group">
+		<label for="" class="col-xs-2">所在地区 ：</label>
+		<div class="col-xs-10">
+			<select name="" class="form-control">
+				<option value="">请选择</option>
+				<option value="" selected="">中国大陆</option>
+				<option value="">台湾</option>
+				<option value="">香港</option>
+				<option value="">海外来宾</option>
+			</select>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">详细地址：</label>
+		<div class="col-xs-10">
+			<textarea class="form-control"  placeholder="请填写详细的居住地点" name="" rows="2" cols="2" style="width: 400px;"></textarea>
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">邮政编码 ：</label>
+		<div class="col-xs-10">
+			<input class="form-control" type="text" value="" placeholder="如果不清楚请填写000000"  />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">收货人姓名：</label>
+		<div class="col-xs-10">
+			<input type="text"class="form-control" />
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="" class="col-xs-2">手机号：</label>
+		<div class="col-xs-10">
+			<select name=""  class="form-control">
+				<option value="">中国大陆 +86</option>
+			</select>
+			<input type="text"class="form-control" placeholder="电话号码。手机号码必须填写一项<br />" />
+		</div>
+	</div>
+	<div class="form-group ">
+		<label for="" class="col-xs-2">电话号码：</label>
+		<div class="col-xs-10 address-telephone">
+			<select name=""  class="form-control">
+				<option value="">中国大陆 +86</option>
+			</select>
+			<input type="text" placeholder="区号" class="form-control"  />-
+			<input type="text" placeholder="电话号码" class="form-control"  />-
+			<input type="text" placeholder="分机" class="form-control" />
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-xs-10 col-xs-offset-2">
+			<input type="checkbox"  />设置为默认收货地址
+		</div>
+	</div>
+	<button type="button" class="btn btn-danger">保存</button> 
+</form>

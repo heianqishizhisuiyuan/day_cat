@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>已买到的宝贝</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="stylesheets/font-awesome.min.css">
+		<link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+		<link name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+		<link rel="stylesheet" type="text/css" href="stylesheets/style.css" />
+	</head>
+
+	<body style="position: relative;">
+		<header id="header">
+			<ul class="header-user">
+				<li id="index_login"><span class="login status-hover">登录 </span><span class="regist status-hover"> &nbsp; &nbsp;注册</span></li>
+				<li id="index_regist"><span class="username"></span> <span class="logout status-hover"> &nbsp; &nbsp;登出</span></li>
+			</ul>
+			<ul class="header-nav">
+				<li class="header-nav-1 header-score">
+					<span id="my-taobao_">我的淘宝</span><i class="fa fa-angle-down fa-lg icon-down"></i>
+					<ul class="my-taobao">
+						<li>
+							<a href="">已买到的东西</a>
+						</li>
+						<li>
+							<a href="">已卖出的东西</a>
+						</li>
+					</ul>
+				</li>
+				<li>我关注的品牌</li>
+				<li class="header-nav-3">购物车</li>
+				<li class="header-nav-3">收藏夹</li>
+				<li>手机版</li>
+				<li>淘宝网</li>
+				<li>企业购</li>
+				<li class="header-nav-8">商家支持
+					<div class="">
+						<ul>
+							<h5>商家</h5>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<li> <span>商家中心</span> <span>商家入驻</span> </li>
+							<hr />
+						</ul>
+					</div>
+				</li>
+				<li>网站导航</li>
+			</ul>
+		</header>
+		<nav class="user-bar">
+			<div class="bar-inwrap clearfix">
+				<div class="fl">
+					<h3 class="display-inblock user-bar-title">我的淘宝</h3>
+				</div>
+				<ul class="list-inline display-inblock user-bar-list">
+						<li><a href="javascript:void(0)" class="subscript">首页</a></li>
+						<li><a href="javascript:void(0)">账户设置</a></li>
+						<li><a href="javascript:void(0)">消息</a></li>
+					</ul>
+				<div class="fr user-search">
+					<input  type="text" /><button>搜索</button>
+				</div>
+			</div>
+		</nav>
+		<main class="shoppingCart-bar clearfix">
+			<div class=" user-aside col-xs-2">
+				<dl>
+    				<dt>全部功能</dt>
+    				<dt id="user_shopping">我的购物车</dt>
+    				<dt id="user_listBought">已经买到的宝贝</dt>
+    				<dt>购买过的店铺</dt>
+    				<dt>我的收藏</dt>
+    				<dt>天猫积分</dt>
+    				<dt>我的优惠信息</dt>
+    				<dt>我的评价</dt>
+    				<dt>退款维权</dt>
+    				<dt>我的足迹</dt>
+    			</dl>
+    			<dl>
+    				<dt>最近访问</dt>
+    				<dt>咸鱼</dt>
+    				<dt>爱逛街</dt>
+    			</dl>
+			</div>
+			<div class="col-xs-10">
+				<ul class="list-inline">
+					<li><a href="">所有订单</a></li>
+					<li><a href="">代付款</a></li>
+					<li><a href="">待发货</a></li>
+					<li><a href="">待收货</a></li>
+					<li><a href="">待评价</a></li>
+					<li><a href="">分阶段</a></li>
+				</ul>
+				<div class="bought-search-wrap">
+					<input class="form-control" type="text" name="" placeholder="输入商品标题或订单号进行搜索" id="" value="" />
+					<button class="btn btn-default">订单搜索</button>
+					<span class="more-term">
+						<a href="javascript:void(0)">更多筛选条件</a>
+						<i class="fa fa-angle-down fa-lg icon-down"></i>
+					</span>
+					<form class="form-inline carful-search display-none">
+						<div class="form-group">
+							<label class="control-label" for="">订单类型</label>
+							<select class="form-control" name="" id="">
+								<option value="">全部</option>
+								<option value="">机票订单</option>
+								<option value="">数字订单</option>
+								<option value="">理财订单</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="">成交时间</label>
+							<input type="date" class="form-control"/> - <input type="date" class="form-control"/>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="">卖家昵称</label>
+							<input type="text" class="form-control" />
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="">评价状态</label>
+							<select class="form-control" name="" id="">
+								<option value="">全部</option>
+								<option value="">需我评价</option>
+								<option value="">我已评价</option>
+								<option value="">对方已评</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<label class="control-label" for="">交易状态</label>
+							<select class="form-control" name="" id="">
+								<option value="">全部</option>
+								<option value="">等待买家付款</option>
+								<option value="">付款确认中</option>
+								<option value="">买家已付款</option>
+							</select>
+						</div>
+					</form>
+				</div>
+				<div class="bought-content">
+					<ul class="list-inline bought-header">
+						<li>宝贝</li>
+						<li>单价</li>
+						<li>数量</li>
+						<li>商品操作</li>
+						<li>实付款</li>
+						<li>交易状态</li>
+						<li>交易操作</li>
+					</ul>
+					
+					<ul class="list-inline bought-ul-list">
+						<li>
+							<ul class="list-inline bought-header bought-header2">
+								<li>2016-12-26 订单号:29003033495507196</li>
+								<li>中国移动官网</li>
+								<li></li>
+								<li>和我联系</li>
+								<li></li>
+								<li></li>
+								<li>删除</li>
+							</ul>
+							<ul class="list-inline bought-header bought-header3">
+								<li class="clearfix">
+									<div class="col-xs-3">
+										<img class="img-responsive" src="/img/s3.jpg" alt="" />
+									</div>
+									<div class="col-xs-9">
+										<p>山东移动手机话费充值50元快充直冲24小时中国移动官方旗舰店</p>
+										<p>正品</p>
+									</div>
+								</li>
+								<li>￥49.00</li>
+								<li>1</li>
+								<li>申请售后</li>
+								<li>
+									<p>￥49.00</p>
+									<p>(自动充值)</p>
+									<p class="phone-order">手机订单</p>
+								</li>
+								<li><p>交易成功</p> <p>订单详情</p></li>
+								<li>
+									<p><button class="btn btn-default">评价</button></p>
+									<p><a href="javascript:void(0)">再次购买</a></p>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<ul class="list-inline bought-header bought-header2">
+								<li>2016-12-26 订单号:29003033495507196</li>
+								<li>中国移动官网</li>
+								<li></li>
+								<li>和我联系</li>
+								<li></li>
+								<li></li>
+								<li>删除</li>
+							</ul>
+							<ul class="list-inline bought-header bought-header3">
+								<li class="clearfix">
+									<div class="col-xs-3">
+										<img class="img-responsive" src="/img/s3.jpg" alt="" />
+									</div>
+									<div class="col-xs-9">
+										<p>山东移动手机话费充值50元快充直冲24小时中国移动官方旗舰店</p>
+										<p>正品</p>
+									</div>
+								</li>
+								<li>￥49.00</li>
+								<li>1</li>
+								<li>申请售后</li>
+								<li>
+									<p>￥49.00</p>
+									<p>(自动充值)</p>
+									<p class="phone-order">手机订单</p>
+								</li>
+								<li><p>交易成功</p> <p>订单详情</p></li>
+								<li>
+									<p><button class="btn btn-default">评价</button></p>
+									<p><a href="javascript:void(0)">再次购买</a></p>
+								</li>
+							</ul>
+						</li>
+						
+					</ul>
+				</div>
+				
+			</div>
+		</main>
+		<div style="margin-top: 80px;">
+			<div style=" width: 100%;min-width: 1200px;">
+				<div class="footer-info-wrap" style="background: #f1f1f1; color: #505050;">
+					<div style=" width: 1000px; margin:0 auto;padding: 1px;text-align: center; position: relative;">
+						<ul class="list-inline " style="margin-top: 10px;">
+							<li>关于天猫 </li>
+							<li>帮助中心</li>
+							<li>规则意见征集</li>
+							<li>开放平台</li>
+							<li>诚聘英才</li>
+							<li>联系我们</li>
+							<li>网站合作</li>
+							<li>法律声明</li>
+							<li>知识产权</li>
+							<li>廉正举报</li>
+						</ul>
+						<ul class="list-inline partner">
+							<li>阿里巴巴集团</li>
+							<li> 淘宝网</li>
+							<li>天猫</li>
+							<li>聚划算</li>
+							<li>全球速卖通</li>
+							<li>阿里妈妈</li>
+							<li>阿里旅行·去啊</li>
+							<li>阿里云计算</li>
+							<li>YunOS</li>
+							<li style="border-right: none">阿里通信</li>
+						</ul>
+						<span class="footer_children" style="right: 60px;"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="javascripts/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript" charset="utf-8" src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="javascripts/jquery.plugs.js" type="text/javascript" charset="utf-8"></script>
+		<script src="javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+
+</html>

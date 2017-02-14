@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>23</title>
+    <link rel="stylesheet" type="text/css" href="/bootstrap/css/bootstrap.css"/>
+  
+  </head>
+  <style type="text/css">
+  	.regist_form{
+  		margin: 0 auto;
+  		margin-top: 200px;
+      width: 600px;
+  	}
+  
+  </style>
+  <body>
+  	<form class="form-horizontal regist_form">
+  		<div class="text-center">
+  			<h3>注册</h3>
+  		</div>
+  		
+  		<div class="form-group">
+  			<label class="col-xs-2 text-right">手机号</label>
+  			<div class="col-xs-10">
+  				<input type="text" class="form-control" id="phone" />
+  			</div>
+  		</div>
+  		<div class="form-group">
+  			<label class="col-xs-2 text-right">密码</label>
+  			<div class="col-xs-10">
+  				<input type="text" class="form-control" id="password"/>
+  			</div>
+  		</div>
+  		<div class="form-group">
+  			<label class="col-xs-2 text-right">确认密码</label>
+  			<div class="col-xs-10">
+  				<input type="text" class="form-control" id="repassword" />
+  			</div>
+  		</div>
+  			<div class="form-group text-center">
+  				<button type="button" class="btn  btn-default " id="btn_regist">注册</button>
+  			</div>
+  	</form>
+  	
+    <script src="/javascripts/jquery-2.1.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/jquery.plugs.js" type="text/javascript" charset="utf-8"></script>
+    <script src="/javascripts/main.js" type="text/javascript" charset="utf-8"></script>
+  </body>
+  <script type="text/javascript">
+	$("#btn_regist").click(function(){
+		console.log(1)
+		if(!$.form.isEmpty($("#phone").val())){
+			$.tip('请输入手机号');
+		}else if(!$.form.isEmpty($("#password").val())){
+			$.tip('请输入密码');
+		}else if(!$.form.isEmpty($("#repassword").val())){
+			$.tip('请再次输入密码');
+		}else if(!$.form.isPhone($("#phone").val())){
+			$.tip('请填写正确手机号');
+		}else if($("#password").val().length<6){
+			$.tip("密码过短,请重新输入");
+		}else if(!$.form.isSame($("#password").val(),$("#repassword").val())){
+			$.tip("两次密码输入不一致");
+		}else{
+			$.ajax({
+				type:"post",
+				url:"/add_user",
+				data:{
+					phone:$("#phone").val(),
+					password:$("#password").val()
+				},
+				success:function(response){	
+					if(response.code==1){
+						$("#btn_regist").addClass("disabled");
+						$("#btn_regist").attr("disabled",true)
+						$.tip("注册成功");
+						var i=3;
+						var setInt=setInterval(function(){
+							if(i==0){
+								clearInterval(setInt)
+								location.href="/";
+							}
+							$.tip("倒计时"+i);
+							i--;
+						},1000)
+					}else if(response.code==-1){
+						$.tip("用户已经存在");
+						$(".regist_form input").val("");
+						
+					}
+				}
+			})
+		}
+
+	})
+	
+  </script>
+</html>

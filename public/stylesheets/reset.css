@@ -1,0 +1,136 @@
+body,ul,ol,dl,dd,h1,h2,h3,h4,h5,h6,p,input,select,textarea,form,figure{margin: 0; padding: 0;}
+body{font:14px/1.5 "微软雅黑";}
+img{border:none;}
+ul,ol{list-style:none;}
+input,select,textarea{outline:none;border:none;background:none;}
+textarea{resize:none;}
+a{text-decoration:none;}
+
+/*清浮动*/
+.clearfix:after{content:"";*display:block;*clear:both;}
+.clearfix{zoom:1;}
+/*浮动*/
+.fl {float: left;}
+.fr {float: right;}
+
+/* 选择*/
+::selection {background-color:#669900; color:#ffffff; text-shadow:none;}
+::-moz-selection {background-color:#669900; color:#ffffff;text-shadow:none;}
+
+
+/* 去掉a的下划线*/
+a {blr:expression(this.onFocus=this.blur())} /*if IE*/
+a {outline:none;}/*if 火狐等现代浏览器浏览器*/ 
+
+
+/* 省略号
+white-space:nowrap;overflow:hidden;text-overflow:ellipsis;*/
+
+/*英文自动换行
+word-break: break-all;*/
+
+/*强制不换行
+white-space:nowrap;*/
+
+
+ /*  让div可以编辑
+ contenteditable="true"*/
+
+
+/* -------------------------------------------------
+ clearfix完整版*/
+
+.clearfix:before,.clearfix:after { content:""; display:table;}
+.clearfix:after{clear:both;}
+.clearfix{*zoom:1;}
+/*
+--------------------------------------------------
+ expression(this.onFocus=this.blur())*/
+
+ .btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  outline: 0;
+}
+ 
+/* .btn:hover,
+.btn:focus,
+.btn.focus {
+  color: #333;
+  text-decoration: none;
+}
+.btn:active,
+.btn.active {
+  background-image: none;
+  outline: 0;
+  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+          box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125);
+} */
+
+.btn-info {
+  color: #fff;
+  background-color: #18ced1;
+  border-color: #0FC2C5;
+}
+.btn-info:focus,
+.btn-info.focus {
+  color: #fff;
+  background-color: #13CED1; 
+} 
+
+.btn-warning {
+  color: #fff;
+  background-color: #EFDC05;
+  border-color: #D5C404;
+}
+.btn-warning:focus,
+.btn-warning.focus {
+  color: #fff;
+  background-color: #D5C404; 
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #E53A40;
+  border-color: #D7363C;
+}
+.btn-danger:focus,
+.btn-danger.focus {
+  color: #fff;
+  background-color: #D7363C; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

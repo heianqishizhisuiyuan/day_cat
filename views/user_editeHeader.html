@@ -1,0 +1,30 @@
+<button class="btn btn-default" id="edit_header"> 本地上传</button>
+<input type="file" id="header_input" name="file" accept="image/gif,image/jpeg,image/jpg,image/png" style="display: none;"/>
+<div style="height: 250px;width: 500px;border: 1px solid #eee; padding: 5px;margin-top: 10px;">
+	<img src="" id="display_header"height="100%" width="100%" alt="" />
+</div>
+<button id="edit_header_save" class="btn btn-primary" style="margin-top: 10px;">保存</button>
+<script type="text/javascript">
+
+	$("#edit_header").click(function(){
+		$("#header_input").click()
+	})
+	$("#header_input").change(function(){
+		document.getElementById("display_header").src= window.URL.createObjectURL(document.getElementById("header_input").files.item(0));
+	})
+	$("#edit_header_save").click(function(){
+		var xhr= new XMLHttpRequest();
+		var uri="/upload";
+		var fd=new FormData();
+		xhr.open("POST",uri,true);
+		xhr.onreadystatechange=function(){
+			if(xhr.readyState==4&&xhr.status==200){
+				alert(xhr.responseText);
+			}
+		};
+		fd.append('uploadType','editeHeader');
+		fd.append('file',document.getElementById("header_input").files.item(0));
+		
+		xhr.send(fd);
+	})
+</script>

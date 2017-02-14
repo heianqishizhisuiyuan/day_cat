@@ -1,0 +1,17 @@
+.west_ul{
+	padding: 0;
+	margin: 0;
+}
+.west_ul li{
+	width: 100%;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	cursor: pointer;
+}
+.west_ul li:hover{
+	background: #eee;
+}
+.west_li_bg{
+	background: #d5d8da !important;
+}
